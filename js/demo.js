@@ -76,8 +76,9 @@ window.onscroll=function(){
     var imgRight = img.offsetTop;
 
     var videoT = video.offsetTop;
+    var whereYouAt = player.currentTime();
 
-    if(t >= videoT && !videop.paused){
+    if(t >= videoT && whereYouAt){
         document.getElementById('er').classList.remove("do");
     }
     if(t < videoT){
@@ -88,8 +89,9 @@ window.onscroll=function(){
     }if(t < imgRight){
         document.getElementById('no').classList.add("yes");
     }
-                         }
+    }
 
-   
+
+
 
 
