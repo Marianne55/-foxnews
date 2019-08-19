@@ -1,0 +1,431 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.row{
+    font-size: 16px;
+}
+div {
+    display: block;
+}
+.row p{
+    font-family: "Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    margin: 0 20px;
+    line-height: 26px;
+    color:  #003366;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #036;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: normal;
+    margin:0 20px;
+}
+.row h2{
+    font-size: 25px
+}
+.site-header {
+    border-top: 2px solid #c20017;
+    background-color: #123262;
+    min-height: 60px;
+    position: relative;
+    
+}
+.box1 img{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.site-header .branding {
+    float: left;
+}
+
+.site-header .branding a {
+    background-image: url(../img/1.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    text-indent: -9999px;
+    margin-left: 12px;
+    margin-top: 16px;
+    height: 24px;
+    width: 126px;
+}
+.page-content{
+    width: 100%;
+}
+
+#model{
+    width : 100%;
+   
+    padding:10px 10px;
+}
+
+.buttom a img{
+    width: 100%;
+}
+.buttom {
+    width: 100%;
+    text-align: center;
+}
+.adv a img{
+    width: 100%;
+    padding: 5px 20px;
+}
+.div #headline{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+    padding: 0 20px;
+    margin-bottom: 6px;
+}
+.adv_text{
+   
+    font-size: 15px;
+}
+.row .img img{
+    width: 100%;
+    display: block;
+    height: 200px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.m-t-10 p{
+    margin-top: 10px !important;
+}
+.m-t-10{
+    margin-top: 10px !important;
+}
+.size{
+    font-size: 22px;
+}
+.m-t-20 p{
+    margin-top: 20px !important;
+}
+.m-t-20{
+    margin-top: 20px !important;
+}
+.m-t-5{
+    margin-bottom: 5px !important;
+}
+.italy{
+    font-size:16px;
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:bold;
+    font-style:italic;
+}
+.list li{
+    list-style:none
+}
+.list li span{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    line-height: 26px;
+    margin: 0 20px;
+    font-size: 16px;
+    color:  #003366;
+    font-weight: 700
+}
+
+.img1 img{
+    width: 100%;
+    display: block;
+    height: 100px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+.c_top{
+    overflow: hidden;
+}
+.c_top p{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:bold;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+    float :left;
+}
+.three ul,.three ul li{
+    padding:0;
+    margin:0;
+    list-style:none;
+    float: right;
+    margin-top: 8px;
+    
+    
+}
+.three{
+    overflow: hidden;
+    position: relative;
+    margin-right:20px;
+}
+.three ul li img{
+    display:block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+.hr{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.c_content{
+    overflow: hidden;
+    margin-top: 8px;
+}
+.c_content span{
+    width:20px;
+    height:17px;
+    margin-left:20px;
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:bold;
+    color:rgba(124,123,129,1);
+    line-height:23px;
+}
+.c_content > img{
+    height:20px;
+    float:right;
+    margin-right: 20px;
+}
+.input_control{
+    
+    margin:20px 20px;
+}
+.input_control input{
+    width :100%;
+    border:1px solid rgba(210,210,210,1);
+    border-radius:4px;
+    padding:20px 20px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.user img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-left: 20px;
+    
+}
+.name{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:bold;
+    font-size: 15px;
+    padding: 0;
+    margin: 0
+}
+.r_msg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex:1;
+    margin-left: 10px;
+}
+.r_msg img{
+   transform: scale(0.35);
+   margin: 0;
+   position: relative;
+   right:11px;
+   bottom: 22px;
+}
+.conversation > span{
+    position: relative;
+    left: 88px;
+    bottom: 38px;
+    font-size:10px;
+    color: #77777A;
+}
+.leader{
+    height:16px;
+    font-size:14px;
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:400;
+    color:rgba(114,114,114,1);
+    position: relative;
+    right:20px;
+    bottom:2px;
+}
+.more img{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+.conversation > span{
+    position: relative;
+    left: 88px;
+    bottom: 38px;
+    font-size:10px;
+    color: #77777A;
+}
+.content{
+    position: relative;
+    left: 88px;
+    bottom: 20px;
+    font-size:18px;
+    margin-right: 120px;
+}
+.content span{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:400;
+    width: 100%;
+    color:rgba(55,55,55,1);
+}
+a{ 
+    text-decoration:none; 
+    color:#333; 
+}
+.reply{
+    padding-left: 88px;
+}
+.reply > a{
+    margin-right: 15px;
+}
+.reply > span{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    color: #727272;
+    
+}
+.reply > img{
+    transform: scale(0.8);
+    position: relative;
+    top:3px;
+    margin-right: 3px;
+}
+.share{
+    float:right;
+    margin-right: 20px;
+    transform: scale(0.8);
+}
+.BB{
+    
+    background:rgba(47,127,226,1);
+    border-radius:8px;
+    margin: 20px 20px 60px 20px;
+    text-align: center;
+    padding:15px 15px;
+}
+.BB p{
+    font-size:17px;
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}
+.red{
+    margin-top:20px;
+    margin-bottom: 30px;
+    background:rgba(255,221,221,1);
+    
+}
+.red p{
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    margin: 0 20px;
+    line-height: 26px;
+    color:  #003366;
+    font-weight:bold;
+    font-style: italic;
+    padding:10px 4px;
+}
+.CC{
+    float:right;
+    position: relative;
+    bottom: 50px;
+}
+.CC P{
+    background:rgb(94, 223, 94);
+    color:rgba(255,255,255,1);
+    border-radius:8px;
+    font-weight:bold;
+    text-align: center;
+    padding:5px 15px;
+    font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+    font-size: 13px;
+}
+.buttom{
+    background:url(../img/banneryellow.png) no-repeat ;
+    background-size: 100% 140px;
+   
+}
+.buttom img{
+    width:30%;
+    height: 16%;
+    margin-left:50%;
+    margin-top:75px;
+    -webkit-animation: free_download 1s linear alternate infinite;
+    animation: free_download 1s linear alternate infinite;
+    
+}
+
+@-webkit-keyframes free_download{
+    0%{-webkit-transform:scale(0.9);}
+    100%{-webkit-transform:scale(1.2);}
+}
+@keyframes free_download{
+    0%{transform:scale(0.9);}
+    100%{transform:scale(1.2);}
+}
+.white{
+    font-size: 12px;
+    margin-left:45%;
+    margin-top: 1%;
+}
+#no{
+    position: fixed;
+    left :0;
+    bottom: 0;
+    
+}
+.yes{
+    display: none;
+}
+.T{
+    height: 120px;
+    background-color: #E8E8E8;
+}
+#er{
+    
+    position: fixed;
+    top:40px;
+    right: 10px;
+    z-index: 1000;
+}
+#er video{
+    width: 200px;
+    
+}
+#er > .close{
+    padding-left: 180px;
+}
+#er > .close > img{
+    width: 20px;
+    height: 20px;
+}
+.do{
+    display: none  ;
+}
+.slr{
+    z-index: 1000;
+  
+}
+.ak video{
+    margin:10px,10px;
+}
+#headline{
+    margin:10px;
+    text-align: center;
+}
