@@ -24,9 +24,10 @@ function CountDown() {
                        } 
         }
 timer = setInterval("CountDown()", 1000);     
-
+var ak = document.getElementsByClassName('ak')[0]
 function closed(){
         document.getElementById('er').style.display = 'none';
+        headroom.destroy();
                   }
 
 var span = document.getElementById("data");
@@ -46,7 +47,7 @@ if (date < 10) {
    
 span.innerText = " " + week + "," + " " + date + "/" + month + "/" + year;
 
-var player = videojs('model',{},function(){
+/* var player = videojs('model',{},function(){
     player.on('play',function(){
         video[1].play()
     })
@@ -55,7 +56,6 @@ var player = videojs('model',{},function(){
         
     })
 })
-
 var player1 = videojs('slr',{},function(){
     player1.volume(0);
     player1.on('play',function(){
@@ -64,7 +64,7 @@ var player1 = videojs('slr',{},function(){
     player1.on('pause',function(){
         video[0].pause()
     })
-})
+}) */
 
 window.onscroll=function(){
     var t =document.documentElement.scrollTop||document.body.scrollTop; //变量t就是滚动条滚动时，到顶部的距离
@@ -76,20 +76,35 @@ window.onscroll=function(){
     var imgRight = img.offsetTop;
 
     var videoT = video.offsetTop;
-    var whereYouAt = player.currentTime();
+    
 
-    if(t >= videoT && whereYouAt){
+   /* if(t >= videoT){
         document.getElementById('er').classList.remove("do");
     }
     if(t < videoT){
         document.getElementById('er').classList.add("do");
-    }
+    } */
     if( t >= imgRight){
         document.getElementById('no').classList.remove("yes");
     }if(t < imgRight){
         document.getElementById('no').classList.add("yes");
     }
     }
+
+var videoM = document.querySelectorAll('videoM');
+enableInlineVideo(videoM);
+var ak = document.getElementsByClassName('ak')[0]
+var headroom = new Headroom(ak, {
+    "tolerance": 5,
+    "offset": 205,
+    "classes": {
+      "initial": "",
+      "pinned": "",
+      "unpinned": "undo"
+    }
+});
+headroom.init();
+
 
 
 

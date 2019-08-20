@@ -418,6 +418,21 @@ a{
 .do{
     display: none  ;
 }
+.undo{
+    width: 200px;
+    position: fixed;
+    top:40px;
+    right: 10px;
+    z-index: 1000;
+    
+}
+.undo .do{
+    display: block;
+}
+.undo .model-dimensions{
+    height: 100px;
+}
+
 .slr{
     z-index: 1000;
   
@@ -435,7 +450,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
     margin: 0;
     padding: 0;
@@ -446,3 +461,12 @@ a{
     left: 0;
     height: 100%;
 }
+.IIV::-webkit-media-controls-play-button,
+.IIV::-webkit-media-controls-start-playback-button {
+     opacity: 0;
+     pointer-events: none;
+     width: 5px;
+ }
+ 
+ 
+ 
