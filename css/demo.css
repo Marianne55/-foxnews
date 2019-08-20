@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1.2px;
     padding: 0 20px;
     margin-bottom: 6px;
+    padding-top: 227px;
 }
 .adv_text{
    
@@ -418,10 +419,20 @@ a{
 .do{
     display: none  ;
 }
+.ak{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.ak video{
+    /* margin:10px,10px; */
+}
 .undo{
     width: 200px;
     position: fixed;
     top:40px;
+    left: auto;
     right: 10px;
     z-index: 1000;
     
@@ -437,9 +448,7 @@ a{
     z-index: 1000;
   
 }
-.ak video{
-    margin:10px,10px;
-}
+
 #headline{
     text-align: center;
     margin-bottom: 5px;
@@ -467,6 +476,14 @@ a{
      pointer-events: none;
      width: 5px;
  }
- 
+ .acr{
+     position: relative;
+     padding-top: 227px;
+ }
+ .awm{
+     clear: both;
+ }
+
+
  
  
