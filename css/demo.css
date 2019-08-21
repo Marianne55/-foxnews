@@ -22,7 +22,7 @@ div {
     font-family: "Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
     margin: 0 20px;
     line-height: 26px;
-    color:  #003366;
+    color:  et#003366;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #036;
@@ -119,8 +119,12 @@ h1, h2, h3, h4, h5, h6 {
 .m-t-20{
     margin-top: 20px !important;
 }
-.m-t-5{
+p[class = "m-t-5"]{
     margin-bottom: 5px !important;
+    font-size: 11px;
+    color: #333;
+    line-height: 11px;
+    margin-top: 10px;
 }
 .italy{
     font-size:16px;
@@ -286,6 +290,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:400;
     width: 100%;
     color:rgba(55,55,55,1);
+    font-size: 13px;
 }
 a{ 
     text-decoration:none; 
@@ -401,8 +406,8 @@ a{
 #er{
     
     position: fixed;
-    top:40px;
-    right: 10px;
+    top:20px;
+    right: 8px;
     z-index: 1000;
 }
 #er video{
@@ -415,6 +420,7 @@ a{
 #er > .close > img{
     width: 20px;
     height: 20px;
+    
 }
 .do{
     display: none  ;
@@ -434,7 +440,7 @@ a{
     top:40px;
     left: auto;
     right: 10px;
-    z-index: 1000;
+    z-index: 900;
     
 }
 .undo .do{
@@ -443,7 +449,9 @@ a{
 .undo .model-dimensions{
     height: 100px;
 }
-
+.undo .video-js .vjs-big-play-button{
+    transform: scale(0.6);
+}
 .slr{
     z-index: 1000;
   
@@ -483,7 +491,42 @@ a{
  .awm{
      clear: both;
  }
-
-
- 
- 
+ .video-js .vjs-big-play-button{
+    font-size: 2.5em;
+    line-height: 2.3em;
+    height: 2.5em;
+    width: 2.5em;
+    -webkit-border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    border-radius: 2.5em;
+    background-color: #73859f;
+    background-color: rgba(115,133,159,.5);
+    border-width: 0.15em;
+    margin-top: -1.25em;
+    margin-left: -1.75em;
+}
+/* 中间的播放箭头 */
+.vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em;
+}
+/* 加载圆圈 */
+.vjs-loading-spinner {
+    font-size: 2.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: -1em;
+    margin-left: -1.5em;
+}
+.HeadTitle{
+    width: 100%;
+    padding:20px 10px;
+}
+.n{
+    font-size: 70px;
+    float: left;
+    margin-bottom: 20px;
+}
+.adv_text {
+    margin-top: 20px;
+}

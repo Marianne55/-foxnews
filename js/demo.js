@@ -77,7 +77,7 @@ window.onscroll=function(){
 
     var videoT = video.offsetTop;
     
-
+    
    /* if(t >= videoT){
         document.getElementById('er').classList.remove("do");
     }
@@ -91,22 +91,41 @@ window.onscroll=function(){
     }
     }
 
-var videoM = document.querySelectorAll('videoM');
+var videoM = document.querySelectorAll('video');
 enableInlineVideo(videoM);
 var ak = document.getElementsByClassName('ak')[0]
-var headroom = new Headroom(ak, {
-    "tolerance": 5,
-    "offset": 205,
-    "classes": {
-      "initial": "",
-      "pinned": "",
-      "unpinned": "undo"
-    }
+var headroom;
+
+var temp = 0;
+var myplayer = videojs('model');
+myplayer.on("pause", function(){
+    var b = myplayer.currentTime();
+    temp = b;
+    
+    headroom.destroy();
+    headroom = null;
 });
-headroom.init();
 
-
-
+var aa = setInterval(function(){
+    var a = myplayer.currentTime();
+    if( a === temp){
+        temp = a
+        // headroom.destroy();
+    } else {
+        if (!headroom) {
+            headroom = new Headroom(ak, {
+                "tolerance": 5,
+                "offset": 205,
+                "classes": {
+                  "initial": "",
+                  "pinned": "",
+                  "unpinned": "undo"
+                }
+            });
+            headroom.init();
+        }
+    }
+},1)
 
 
 
