@@ -31,10 +31,11 @@ function closed(){
                   }
 
 var span = document.getElementById("data");
+var span1 = document.getElementById("data1");
 var now = new Date();
 var year = now.getFullYear();//年
 var month = now.getMonth() + 1;//月  (注意：月份+1)
-var date = now.getDate();//日
+var date = now.getDate() ;//日
 var day = now.getDay();
 var weeks = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 var week = weeks[day];//根据day值，获取星期数组中的星期数。
@@ -46,6 +47,7 @@ if (date < 10) {
     }
    
 span.innerText = " " + week + "," + " " + date + "/" + month + "/" + year;
+span1.innerText = " " + week + "," + " " + date + "/" + month + "/" + year;
 
 /* var player = videojs('model',{},function(){
     player.on('play',function(){
@@ -71,7 +73,7 @@ window.onscroll=function(){
 
     var img = document.getElementById('target');
 
-    var video = document.getElementById('headline');
+    var video = document.getElementById('HeadTitle');
 
     var imgRight = img.offsetTop;
 
@@ -91,7 +93,7 @@ window.onscroll=function(){
     }
     }
 
-var videoM = document.querySelectorAll('video');
+var videoM = document.querySelectorAll('video')[0];
 enableInlineVideo(videoM);
 var ak = document.getElementsByClassName('ak')[0]
 var headroom;

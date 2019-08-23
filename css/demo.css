@@ -4,6 +4,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
     display: block;
@@ -23,6 +24,8 @@ div {
     margin: 0 20px;
     line-height: 26px;
     color:  et#003366;
+    word-break: break-all;
+    text-align: justify;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #036;
@@ -79,6 +82,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     text-align: center;
 }
+.row > a{
+    display: block;
+    position: relative;
+} 
+
 .adv a img{
     width: 100%;
     padding: 5px 20px;
@@ -331,6 +339,7 @@ a{
     font-family:"Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
     font-weight:bold;
     color:rgba(255,255,255,1);
+    text-align:center;
 }
 .red{
     margin-top:20px;
@@ -363,15 +372,15 @@ a{
     font-size: 13px;
 }
 .buttom{
-    background:url(../img/banneryellow.png) no-repeat ;
+    background:url(../img/blueLP.png) no-repeat ;
     background-size: 100% 140px;
-   
+    
 }
-.buttom img{
+.buttom > img{
     width:30%;
     height: 16%;
     margin-left:50%;
-    margin-top:75px;
+    margin-top:55px;
     -webkit-animation: free_download 1s linear alternate infinite;
     animation: free_download 1s linear alternate infinite;
     
@@ -526,7 +535,42 @@ a{
     font-size: 70px;
     float: left;
     margin-bottom: 20px;
+    position: relative;
+    top: 14px;
 }
 .adv_text {
     margin-top: 20px;
+}
+#HeadTitle{
+    padding: 10px 10px 20px 10px;
+    width: 100%;
+    position: relative;
+}
+.bottle1 img{
+    transform: translate(-50%, -50%) scale(0.35);
+    position: absolute;
+    top: 60%;
+    left: 39%;
+}
+.OF > img{
+    width: 100%;
+}
+#bottle2 img{
+    transform: translate(-50%, -50%) scale(0.4);
+    position: absolute;
+    top: 50%;
+    left: 19%;
+}
+.OF{
+    position: relative;
+    display: block;
+}
+.end{
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    font-family: "Microsoft Yahei","Helvetica","Arial","Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei","sans-serif";
+}
+a, img { 
+    -webkit-touch-callout: none; 
 }
